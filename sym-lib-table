@@ -4,4 +4,5 @@
   (lib (name wemos_mini)(type Legacy)(uri ${KIPRJMOD}/wemos_mini.lib)(options "")(descr ""))
   (lib (name BME280)(type Legacy)(uri ${KIPRJMOD}/BME280.lib)(options "")(descr ""))
   (lib (name whatnick)(type Legacy)(uri ${KIPRJMOD}/whatnick.lib)(options "")(descr ""))
+  (lib (name Adafruit_Feather)(type Legacy)(uri /Users/mj/FitHome/repos/Tishams_PCBs/din_isolated_SPI/Adafruit_Feather.lib)(options "")(descr ""))
 )
