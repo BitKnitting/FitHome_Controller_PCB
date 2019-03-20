@@ -42,7 +42,7 @@ $ esptool.py -p $PORT erase_flash
 esptool.py -p /dev/cu.SLAB_USBtoUART write_flash --flash_size=detect 0 cphuzzah.bin
 ```
 * Remove the jumper wire and hit the restart button.
-* If it is a .bin file, there is a bit more work involved.  To install, you need to run [BOSSA](https://github.com/shumatech/BOSSA).  I already have this utility installed on my Mac.
+
 
 
 
