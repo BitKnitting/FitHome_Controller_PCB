@@ -58,13 +58,13 @@ $EndComp
 Text GLabel 3900 1500 2    60   Output ~ 0
 CLK_C
 Text GLabel 3900 1400 2    60   Input ~ 0
-MISO_W
+MISO_C
 Text GLabel 3900 1300 2    60   Output ~ 0
 MOSI_C
 Text GLabel 3900 1200 2    60   Output ~ 0
-CS0_W
+CS0_C
 Text GLabel 2400 1400 0    60   Output ~ 0
-CS1_W
+CS1_C
 $Comp
 L power:GNDD #PWR01
 U 1 1 59F532AE
@@ -101,12 +101,12 @@ $EndComp
 $Comp
 L power:GNDS #PWR04
 U 1 1 59F5342B
-P 4000 4450
-F 0 "#PWR04" H 4000 4200 50  0001 C CNN
-F 1 "GNDS" V 4005 4322 50  0000 R CNN
-F 2 "" H 4000 4450 50  0001 C CNN
-F 3 "" H 4000 4450 50  0001 C CNN
-	1    4000 4450
+P 5000 5250
+F 0 "#PWR04" H 5000 5000 50  0001 C CNN
+F 1 "GNDS" V 5005 5122 50  0000 R CNN
+F 2 "" H 5000 5250 50  0001 C CNN
+F 3 "" H 5000 5250 50  0001 C CNN
+	1    5000 5250
 	0    1    1    0   
 $EndComp
 $Comp
@@ -202,23 +202,23 @@ $EndComp
 Text GLabel 6300 2900 2    60   Output ~ 0
 SCLK_M
 Text GLabel 6300 3000 2    60   Output ~ 0
-MOSI_E
+MOSI_M
 Text GLabel 6300 3100 2    60   Output ~ 0
-CS0_E
+CS0_M
 Text GLabel 6300 3300 2    60   Output ~ 0
-CS1_E
+CS1_M
 Text GLabel 6300 3500 2    60   Input ~ 0
-MISO_E
+MISO_M
 Text GLabel 3150 2900 0    60   Input ~ 0
 CLK_C
 Text GLabel 3150 3000 0    60   Input ~ 0
 MOSI_C
 Text GLabel 3150 3100 0    60   Input ~ 0
-CS0_W
+CS0_C
 Text GLabel 3150 3300 0    60   Input ~ 0
-CS1_W
+CS1_C
 Text GLabel 3150 3500 0    60   Output ~ 0
-MISO_W
+MISO_C
 Text GLabel 3150 3400 0    60   Input ~ 0
 CS2_W
 Text GLabel 6300 3400 2    60   Output ~ 0
@@ -306,10 +306,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 2600 5700 2400
 Wire Wire Line
-	5600 2700 5900 2700
-Wire Wire Line
-	5900 2700 5900 2400
-Wire Wire Line
 	3800 2900 3550 2900
 Wire Wire Line
 	3800 3000 3550 3000
@@ -345,7 +341,6 @@ Wire Wire Line
 	2650 1400 2400 1400
 Wire Wire Line
 	6900 2700 6900 3250
-Connection ~ 5900 2700
 Wire Wire Line
 	6900 3800 6900 3450
 Connection ~ 5700 3800
@@ -394,33 +389,19 @@ F 3 "" H 5700 2400 50  0001 C CNN
 	1    5700 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4300 4750 4300 4450
-Wire Wire Line
-	4300 4450 4000 4450
 $Comp
 L power:GNDD #PWR06
 U 1 1 59F5CAF2
-P 4300 6000
-F 0 "#PWR06" H 4300 5750 50  0001 C CNN
-F 1 "GNDD" V 4304 5890 50  0000 R CNN
-F 2 "" H 4300 6000 50  0001 C CNN
-F 3 "" H 4300 6000 50  0001 C CNN
-	1    4300 6000
-	1    0    0    -1  
+P 4300 5250
+F 0 "#PWR06" H 4300 5000 50  0001 C CNN
+F 1 "GNDD" V 4304 5140 50  0000 R CNN
+F 2 "" H 4300 5250 50  0001 C CNN
+F 3 "" H 4300 5250 50  0001 C CNN
+	1    4300 5250
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4200 4750 4200 4600
-Wire Wire Line
-	4200 4600 4100 4600
-Wire Wire Line
 	4400 4750 4400 4550
-Wire Wire Line
-	4500 4750 4500 4550
-Wire Wire Line
-	4600 4750 4600 4550
-Wire Wire Line
-	4700 4750 4700 4550
 Wire Wire Line
 	4800 4750 4800 4550
 Wire Wire Line
@@ -428,42 +409,40 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR07
 U 1 1 59F5D508
-P 4200 5950
-F 0 "#PWR07" H 4200 5800 50  0001 C CNN
-F 1 "+3V3" V 4215 6078 50  0000 L CNN
-F 2 "" H 4200 5950 50  0001 C CNN
-F 3 "" H 4200 5950 50  0001 C CNN
-	1    4200 5950
-	-1   0    0    1   
+P 4200 5200
+F 0 "#PWR07" H 4200 5050 50  0001 C CNN
+F 1 "+3V3" V 4215 5328 50  0000 L CNN
+F 2 "" H 4200 5200 50  0001 C CNN
+F 3 "" H 4200 5200 50  0001 C CNN
+	1    4200 5200
+	0    -1   -1   0   
 $EndComp
-Text GLabel 4100 4600 0    60   Output ~ 0
-3V3_I
-Text GLabel 5900 2400 1    60   Input ~ 0
-3V3_I
+Text GLabel 5100 5350 3    60   Output ~ 0
+3V3_ISO
+Text GLabel 5900 2550 1    60   Input ~ 0
+3V3_ISO
 Text GLabel 4400 4550 1    60   Input ~ 0
-CS1_E
+CS1_M
 Text GLabel 4900 4550 1    60   Input ~ 0
 CS2_E
 Text GLabel 4800 4550 1    60   Input ~ 0
-CS0_E
+CS0_M
 Text GLabel 4600 5350 3    60   Output ~ 0
 SCLK_M
-Text GLabel 4600 4550 1    60   Output ~ 0
-MISO_E
-Text GLabel 4500 4550 1    60   Input ~ 0
-MOSI_E
+Text GLabel 4700 5550 3    60   Input ~ 0
+MISO_M
+Text GLabel 4800 5550 3    60   Output ~ 0
+MOSI_M
 Text GLabel 7500 2600 2    60   Input ~ 0
-3V3_C
+3V3_CPU
 Text GLabel 7500 3700 2    60   Input ~ 0
-GND_C
-Text GLabel 6900 3800 2    60   Input ~ 0
-GND_I
-Text GLabel 3900 1100 2    60   Input ~ 0
-3V3_C
-Text GLabel 4300 5800 1    60   Input ~ 0
 GND_CPU
-Text GLabel 4200 4450 1    60   Input ~ 0
-GND_I
+Text GLabel 6900 3800 2    60   Input ~ 0
+GND_ISO
+Text GLabel 3900 1100 2    60   Input ~ 0
+3V3_CPU
+Text GLabel 4300 5350 3    60   Output ~ 0
+GND_CPU
 $Comp
 L whatnick:LOGO G1
 U 1 1 59F5EAB7
@@ -489,8 +468,6 @@ F 4 " " H 7500 4850 50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5900 2700 6900 2700
-Wire Wire Line
 	5700 3800 6900 3800
 Wire Wire Line
 	5700 2600 7500 2600
@@ -499,45 +476,83 @@ Wire Wire Line
 $Comp
 L Adafruit_Feather:ADAFRUIT_FEATHERWING_FitHome MS?
 U 1 1 5C90808C
-P 6200 650
-F 0 "MS?" H 6200 650 45  0001 C CNN
-F 1 "ADAFRUIT_FEATHERWING_FitHome" H 6200 650 45  0001 C CNN
-F 2 "" H 6200 650 60  0001 C CNN
-F 3 "" H 6200 650 60  0001 C CNN
-	1    6200 650 
+P 8850 800
+F 0 "MS?" H 8850 800 45  0001 C CNN
+F 1 "ADAFRUIT_FEATHERWING_FitHome" H 8850 800 45  0001 C CNN
+F 2 "" H 8850 800 60  0001 C CNN
+F 3 "" H 8850 800 60  0001 C CNN
+	1    8850 800 
 	0    1    1    0   
 $EndComp
-Text GLabel 5750 1950 0    60   Output ~ 0
+Text GLabel 8400 2100 0    60   Output ~ 0
 MOSI_C
 Wire Wire Line
-	6000 1950 5750 1950
-Text GLabel 5750 2050 0    60   Input ~ 0
-MISO_W
-Text GLabel 5750 1850 0    60   Output ~ 0
+	8650 2100 8400 2100
+Text GLabel 8400 2200 0    60   Input ~ 0
+MISO_C
+Text GLabel 8400 2000 0    60   Output ~ 0
 CLK_C
 Wire Wire Line
-	6000 1850 5750 1850
+	8650 2000 8400 2000
 Wire Wire Line
-	6000 2050 5750 2050
+	8650 2200 8400 2200
 $Comp
 L power:GNDD #PWR?
 U 1 1 5C90D429
-P 5750 1150
-F 0 "#PWR?" H 5750 900 50  0001 C CNN
-F 1 "GNDD" V 5754 1040 50  0000 R CNN
-F 2 "" H 5750 1150 50  0001 C CNN
-F 3 "" H 5750 1150 50  0001 C CNN
-	1    5750 1150
+P 8400 1300
+F 0 "#PWR?" H 8400 1050 50  0001 C CNN
+F 1 "GNDD" V 8404 1190 50  0000 R CNN
+F 2 "" H 8400 1300 50  0001 C CNN
+F 3 "" H 8400 1300 50  0001 C CNN
+	1    8400 1300
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5750 1150 6000 1150
+	8400 1300 8650 1300
 Text GLabel 4200 5350 3    60   Output ~ 0
 3V3_CPU
 Wire Wire Line
-	4200 5150 4200 5950
+	4200 5150 4200 5200
 Wire Wire Line
-	4300 5150 4300 6000
+	4300 5150 4300 5250
 Wire Wire Line
 	4600 5350 4600 5150
+Wire Wire Line
+	5000 5350 5000 5250
+Text GLabel 5000 5350 3    60   Output ~ 0
+GND_ISO
+Wire Wire Line
+	4200 5350 4200 5200
+Connection ~ 4200 5200
+Wire Wire Line
+	4300 5350 4300 5250
+Connection ~ 4300 5250
+Connection ~ 5000 5250
+Wire Wire Line
+	5000 5250 5000 5150
+Wire Wire Line
+	5100 5150 5100 5350
+Wire Wire Line
+	5600 2700 5900 2700
+Wire Wire Line
+	5900 2550 5900 2700
+Connection ~ 5900 2700
+Wire Wire Line
+	5900 2700 6900 2700
+Wire Wire Line
+	4800 5550 4800 5150
+Wire Wire Line
+	4700 5550 4700 5150
+Text GLabel 10500 2100 2    60   Output ~ 0
+CS0_C
+Text GLabel 10500 2000 2    60   Output ~ 0
+CS1_C
+Wire Wire Line
+	10500 2100 10350 2100
+Wire Wire Line
+	10350 2000 10500 2000
+Text GLabel 10500 1400 2    60   Input ~ 0
+3V3_CPU
+Wire Wire Line
+	10500 1400 10350 1400
 $EndSCHEMATC
