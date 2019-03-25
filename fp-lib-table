@@ -3,4 +3,7 @@
   (lib (name wemos_d1_mini)(type KiCad)(uri "$(KIPRJMOD)/wemos_d1_mini.pretty")(options "")(descr ""))
   (lib (name BME280)(type Legacy)(uri "$(KIPRJMOD)/BME280.mod")(options "")(descr ""))
   (lib (name Whatnick_logo)(type KiCad)(uri "$(KIPRJMOD)/Whatnick_logo.pretty")(options "")(descr ""))
+  (lib (name HappyDayEnergyMonitor)(type KiCad)(uri ${KIPRJMOD}/HappyDayEnergyMonitor.pretty)(options "")(descr ""))
+  (lib (name Housings_SOIC)(type Github)(uri https://github.com/KiCad/Housings_SOIC.pretty)(options "")(descr ""))
+  (lib (name Connectors_Molex)(type Github)(uri https://github.com/KiCad/Connectors_Molex.pretty)(options "")(descr ""))
 )
